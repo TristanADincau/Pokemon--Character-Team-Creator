@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon!</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/831e1f4da157d96bc996f8c9f5f1e578?family=Pokemon+GB" rel="stylesheet">
+
+    <div id="banner">PokeCreator</div>
+  </head>
+  <body>
+    <div id="container">
+        <!-- Left Section -->
+        <div id="character-selector" class="selector">
+            <div id="character-image">
+                <img src="./assets/character/IMG_0844.PNG" alt="" name="skinimg">
+                <img src="./" alt="" id="eye-img" name="eyeimg">
+                <img src="./" alt="" id="hair-img" name="hairimg">
+                <img src="./" alt="" id="outfit-img" name="outfitimg">
+                <img src="./" alt="" id="accessory-img" name="accessoryimg">
+            </div>
+            <div id="design-selector">
+                <button type="button" id="skin" onClick="skinDisplay()">skin</button>
+                <button type="button" id="face" onClick="eyesDisplay()">face</button>
+                <button type="button" id="hair" onClick="hairDisplay()">hair</button>
+                <button type="button" id="outfit" onClick="outfitDisplay()">outfit</button>
+                <button type="button" id="accessory" onClick="accessoryDisplay()">accessory</button>
+            </div>
+            <div id="design-options">
+              <!-- skin -->
+              <div id="skin-container">
+                <div class="design-options-boxes">
+                  <a class="skin-color-container"href="#" onClick="changeSkin1();">
+                    <img id="skin-one" src="./assets/character/IMG_0839.PNG" alt="">
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="skin-color-container"href="#" onClick="changeSkin2();">
+                    <img id="skin-two" src="./assets/character/IMG_0840.PNG" alt="">
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="skin-color-container"href="#" onClick="changeSkin3();">
+                    <img id="skin-three" src="./assets/character/IMG_0841.PNG" alt="">
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="skin-color-container"href="#" onClick="changeSkin4();">
+                    <img id="skin-four" src="./assets/character/IMG_0842.PNG" alt="">
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="skin-color-container"href="#" onClick="changeSkin5();">
+                    <img id="skin-five" src="./assets/character/IMG_0843.PNG" alt="">
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="skin-color-container"href="#" onClick="changeSkin6();">
+                    <img id="skin-six" src="./assets/character/IMG_0844.PNG" alt="">
+                  </a>
+                </div>
+              </div>
+              <!-- skin end -->
+              <!-- eyes -->
+              <div id="eye-selector-container">
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="changeEye1()">
+                    <img id="eye-one" src="./assets/character/IMG_0845.PNG" alt="" >
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="changeEye2()">
+                    <img id="eye-two" src="./assets/character/IMG_0846.PNG" alt="" >
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="changeEye3()">
+                    <img id="eye-three" src="./assets/character/IMG_0847.PNG" alt="" >
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="">
+                    <!-- <img id="eye-three" src="" alt="" > -->
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="">
+                    <!-- <img id="eye-three" src="" alt="" > -->
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="">
+                    <!-- <img id="eye-three" src="" alt="" > -->
+                  </a>
+                </div>
+              </div>
+              <!-- eyes end -->
+              <!-- hair -->
+              <div id="hair-container">
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="changeHair1()">
+                    <img id="hair-one" src="./assets/character/IMG_0848.PNG" alt="" >
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="changeHair2()">
+                    <img id="hair-two" src="./assets/character/IMG_0849.PNG" alt="" >
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="changeHair3()">
+                    <img id="hair-three" src="./assets/character/IMG_0850.PNG" alt="" >
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="">
+                    <!-- <img id="hair-four" src="" alt="" > -->
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="">
+                    <!-- <img id="hair-five" src="" alt="" > -->
+                  </a>
+                </div>
+                <div class="design-options-boxes">
+                  <a class="eye-container" href="#" onClick="">
+                    <!-- <img id="hair-six" src="" alt="" > -->
+                  </a>
+                </div>
+              </div>
+                <!-- hair end -->
+                <!-- outfit -->
+                <div id="outfit-container">
+                  <div class="design-options-boxes">
+                    <a class="eye-container" href="#" onClick="changeOutfit1()">
+                      <img id="outfit-one" src="./assets/character/IMG_0851.PNG" alt="" >
+                    </a>
+                  </div>
+                  <div class="design-options-boxes">
+                    <a class="eye-container" href="#" onClick="changeOutfit2()">
+                      <img id="outfit-two" src="./assets/character/IMG_0852.PNG" alt="" >
+                    </a>
+                  </div>
+                  <div class="design-options-boxes">
+                    <a class="eye-container" href="#" onClick="">
+                      <!-- <img id="outfit-three" src="" alt="" > -->
+                    </a>
+                  </div>
+                  <div class="design-options-boxes">
+                    <a class="eye-container" href="#" onClick="">
+                      <!-- <img id="outfit-four" src="" alt="" > -->
+                    </a>
+                  </div>
+                  <div class="design-options-boxes">
+                    <a class="eye-container" href="#" onClick="">
+                      <!-- <img id="outfit-five" src="" alt="" > -->
+                    </a>
+                  </div>
+                  <div class="design-options-boxes">
+                    <a class="eye-container" href="#" onClick="">
+                      <!-- <img id="outfit-six" src="" alt="" > -->
+                    </a>
+                  </div>
+                </div>
+                  <!-- outfit end -->
+                  <!-- accessories -->
+                  <div id="accessory-container">
+                    <div class="design-options-boxes">
+                      <a class="eye-container" href="#" onClick="changeAccessory1()">
+                        <img id="accessory-one" src="./assets/character/IMG_0853.PNG" alt="" >
+                      </a>
+                    </div>
+                    <div class="design-options-boxes">
+                      <a class="eye-container" href="#" onClick="changeAccessory2()">
+                        <img id="accessory-two" src="./assets/character/IMG_0854.PNG" alt="" >
+                      </a>
+                    </div>
+                    <div class="design-options-boxes">
+                      <a class="eye-container" href="#" onClick="">
+                        <!-- <img id="accessory-three" src="" alt="" > -->
+                      </a>
+                    </div>
+                    <div class="design-options-boxes">
+                      <a class="eye-container" href="#" onClick="">
+                        <!-- <img id="accessory-four" src="" alt="" > -->
+                      </a>
+                    </div>
+                    <div class="design-options-boxes">
+                      <a class="eye-container" href="#" onClick="">
+                        <!-- <img id="accessory-five" src="" alt="" > -->
+                      </a>
+                    </div>
+                    <div class="design-options-boxes">
+                      <a class="eye-container" href="#" onClick="">
+                        <!-- <img id="accessory-three" src="" alt="" > -->
+                      </a>
+                    </div>
+                  </div>
+                  <!-- accesories end -->
+            </div>
+        </div>
+
+        <!-- Middle Section -->
+        <div id="middle-display" class="selector">
+          <div id="trainer-info">
+            <form id="trainer-form">
+              <label id="formLabel" for="trainerName" maxlength="10">Name:</label>
+              <input type="text" id="trainerName" name="trainerName">
+              <label id="formLabel" for="region">Region:</label>
+              <input list="regions" id="region" name="region">
+                <datalist id="regions">
+                  <option value="Kanto">
+                  <option value="Johto">
+                  <option value="Hoenn">
+                  <option value="Sinnoh">
+                  <option value="Hisui">
+                  <option value="Unova">
+                  <option value="Kalos">
+                  <option value="Aloa">
+                  <option value="Galar">
+                </datalist>
+              <label id="formLabel" for="trainerBio">About Me:</label>
+              <textarea id="trainerBio" name="trainerBio"></textarea>
+            </form>
+          </div>
+          <div id="trainer-badges-container">
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/d/dd/Boulder_Badge.png/100px-Boulder_Badge.png" alt="boulder badge">
+            </div>
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/9/9c/Cascade_Badge.png/100px-Cascade_Badge.png" alt="cascade badge">
+            </div>
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/7/78/Earth_Badge.png/100px-Earth_Badge.png" alt="earth badge">
+            </div>
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/7/7d/Soul_Badge.png/100px-Soul_Badge.png" alt="soul badge">
+            </div>
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/a/a6/Thunder_Badge.png/100px-Thunder_Badge.png" alt="thunder badge">
+            </div>
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/6/6b/Marsh_Badge.png/100px-Marsh_Badge.png" alt="marsh badge">
+            </div>
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/1/12/Volcano_Badge.png/100px-Volcano_Badge.png" alt="volcano badge">
+            </div>
+            <div class="trainer-badges">
+              <img src="https://archives.bulbagarden.net/media/upload/thumb/b/b5/Rainbow_Badge.png/100px-Rainbow_Badge.png" alt="rainbow badge?">
+            </div>
+          </div>
+          <div class="type-container">
+            <div class="pokemons">
+                <a class="pokemon-container" href="#" onClick="replace(grassPokemon)">
+                  <img src="https://tiermaker.com/images/templates/fully-evolved-grass-type-pokmon-1300712/13007121634912969.png" alt="yes" name="grassimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container" href="#" onClick="replace(firePokemon)">
+                  <img src="https://archives.bulbagarden.net/media/upload/a/ab/Fire_icon_SwSh.png" alt="yes" name="fireimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(waterPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg/2048px-Pok%C3%A9mon_Water_Type_Icon.svg.png" alt="yes" name="waterimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(electricPokemon)">
+                  <img src="https://i.pinimg.com/originals/3c/dd/17/3cdd17306e51b9ff6c0264241e3e4c4c.png" alt="yes" name="electricimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(ghostPokemon)">
+                  <img src="https://tiermaker.com/images/chart/chart/pokmon-type-symbols-724065/d-ghostpng.png" alt="yes" name="ghostimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(fairyPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Pok%C3%A9mon_Fairy_Type_Icon.svg/2048px-Pok%C3%A9mon_Fairy_Type_Icon.svg.png" alt="yes" name="fairyimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(fightingPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pok%C3%A9mon_Fighting_Type_Icon.svg/2048px-Pok%C3%A9mon_Fighting_Type_Icon.svg.png" alt="yes" name="fightingimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(rockPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Pok%C3%A9mon_Rock_Type_Icon.svg/800px-Pok%C3%A9mon_Rock_Type_Icon.svg.png" alt="yes" name="rockimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(darkPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Pok%C3%A9mon_Dark_Type_Icon.svg/2048px-Pok%C3%A9mon_Dark_Type_Icon.svg.png" alt="yes" name="darkimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(dragonPokemon)">
+                  <img src="https://tiermaker.com/images/templates/dragon-type-pokemon-1431971/14319711640800727.png" alt="yes" name="dragonimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(flyingPokemon)">
+                  <img src="https://pixelmonmod.com/w/images/0/0d/FlyingType.png" alt="yes" name="flyingimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(poisonPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/640px-Pok%C3%A9mon_Poison_Type_Icon.svg.png" alt="yes" name="poisonimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(psychicPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Pok%C3%A9mon_Psychic_Type_Icon.svg/2048px-Pok%C3%A9mon_Psychic_Type_Icon.svg.png" alt="yes" name="psychicimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(icePokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Pok%C3%A9mon_Ice_Type_Icon.svg/480px-Pok%C3%A9mon_Ice_Type_Icon.svg.png" alt="yes" name="iceimg">
+                </a>
+            </div>
+            <div class="pokemons">
+                <a class="pokemon-container"href="#" onClick="replace(steelPokemon)">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Pok%C3%A9mon_Steel_Type_Icon.svg/2048px-Pok%C3%A9mon_Steel_Type_Icon.svg.png" alt="yes" name="steelimg">
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+    <!-- Trainer's Team Slots -->
+    <div id="pokemon-selector" class="selector">
+        <div class="trainer-team">
+          <img src="./" alt="Teammate 1" id="teammate1" style="display: none">
+        </div>
+        <div class="trainer-team">
+          <img src="./" alt="Teammate 2" id="teammate2" style="display: none">
+        </div>
+        <div class="trainer-team">
+          <img src="./" alt="Teammate 3" id="teammate3" style="display: none">
+        </div>
+        <div class="trainer-team">
+          <img src="./" alt="Teammate 4" id="teammate4" style="display: none">
+        </div>
+        <div class="trainer-team">
+          <img src="./" alt="Teammate 5" id="teammate5" style="display: none">
+        </div>
+        <div class="trainer-team">
+          <img src="./" alt="Teammate 6" id="teammate6" style="display: none">
+        </div>
+      <!-- Pokémon Images for Dragging -->
+      <div id="pokemon-images" class="image-container" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
